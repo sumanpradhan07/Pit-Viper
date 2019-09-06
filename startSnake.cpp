@@ -23,11 +23,16 @@ int x ,y,z;
 system("color 02");
 char ch ;
 char t ='\xCD';
-char key;
+char key,ans;
 printInstruction();
 system("cls");
+printf("\nDo you wonna play the music (y/n):");
+scanf("%c",&ans);
+if(ans == 'y')
+{
 PlaySound(TEXT("dj.wav"),NULL,SND_FILENAME| SND_ASYNC|SND_LOOP);
 system("pause");
+}
 load();
 length=5;
 head.x=25;
